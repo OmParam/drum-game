@@ -1,0 +1,140 @@
+html{
+    background-color: #FAF0E4;
+}
+
+header{
+    text-transform:uppercase;
+
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    color: #734a10;
+    font-size: 1rem;
+
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    color: #FF8551;
+    font-size: 5rem;
+    text-shadow: 1px 5px #734a10;
+
+    margin-top: 5px;
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+footer{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-style: italic;
+    color: #734a10;
+    font-size: 1rem;
+
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+.allbuttons{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px 120px;
+    grid-template-rows: 120px;
+}
+
+.button{
+    width: 100px;
+    height: 100px;
+    font-family: 'Pacifico', cursive;
+    color: #FF8551;
+    font-size: 3rem;
+    line-height: 120px;
+
+    border-radius: 20%;
+    border-color: #FF8551;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.button{
+    background-size:140px;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+.z{
+    background-image: url("./images/tom1.png");
+}
+.x{
+    background-image: url("./images/tom2.png");
+}
+.c{
+    background-image: url("./images/tom3.png");
+}
+.v{
+    background-image: url("./images/tom4.png");
+}
+.b{
+    background-image: url("./images/crash.png");
+}
+.n{
+    background-image: url("./images/kick.png");
+}
+.m{
+    background-image: url("./images/snare.png");
+}
+
+
+.buttonpressed{
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    line-height: 100px;
+
+    margin: 15px;
+}
+
+.buttoncont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 600px){
+    h1{
+        margin-top: 50px;
+        margin-bottom: 80px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 100px;
+        line-height: 80px;
+    }
+    .allbuttons{
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+    }
+    .button{
+        height: 80px;
+        width: 80px;
+        font-size: 2rem;
+    }
+    .buttonpressed{
+        height: 60px;
+        width: 60px;
+        font-size: 1rem;
+    }
+    .buttoncont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .m{
+        grid-column-start: -3;
+    }
+}
